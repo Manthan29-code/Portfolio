@@ -201,6 +201,7 @@ h1, h2, h3, h4, h5, h6 {
 .skills {
     padding: 80px 0;
     background-color: var(--light-gray);
+    overflow: hidden;
 }
 
 .skills h2 {
@@ -210,10 +211,33 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primary-color);
 }
 
-.skills-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+/* Skills Marquee - Infinite horizontal scroll */
+.skills-track {
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.skills-marquee {
+    display: flex;
     gap: 2rem;
+    width: max-content;
+    animation: scroll-left 32s linear infinite;
+}
+
+/* Pause animation on hover for better UX */
+.skills-track:hover .skills-marquee {
+    animation-play-state: paused;
+}
+
+/* Keyframes for left scroll animation */
+@keyframes scroll-left {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(-50%);
+    }
 }
 
 .skill-card {
@@ -223,6 +247,8 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    min-width: 250px;
+    flex-shrink: 0;
 }
 
 .skill-card:hover {

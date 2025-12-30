@@ -50,26 +50,10 @@
     <section class="skills">
         <div class="container">
             <h2>Skills & Technologies</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <i class="fab fa-html5"></i>
-                    <h3>HTML5</h3>
-                    <p>Semantic markup and modern HTML standards</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-css3-alt"></i>
-                    <h3>CSS3</h3>
-                    <p>Responsive design and modern CSS techniques</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fab fa-js-square"></i>
-                    <h3>JavaScript</h3>
-                    <p>ES6+ and DOM manipulation</p>
-                </div>
-                <div class="skill-card">
-                    <i class="fas fa-code"></i>
-                    <h3>C/C++</h3>
-                    <p>System programming and problem solving</p>
+            <!-- Dynamic skills marquee - cards loaded from skillData.js -->
+            <div class="skills-track">
+                <div class="skills-marquee" id="skills-marquee">
+                    <!-- Skills will be loaded dynamically by skillsLoader.js -->
                 </div>
             </div>
         </div>
@@ -88,5 +72,7 @@
     </footer>
 
 </body>
+<script src="js/skillData.js"></script>
+<script src="js/skillsLoader.js"></script>
 <script src="js/script.js" defer></script>
 </html>
