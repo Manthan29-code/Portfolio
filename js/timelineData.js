@@ -8,22 +8,23 @@
  */
 
 const timelineData = [
+    
     {
-        title: "Front-End Development Intern",
-        organization: "WebStart Technologies",
-        date: "2025 - Present",
-        description: "Working on modern web applications using HTML, CSS, and JavaScript. Collaborating with senior developers to create responsive and user-friendly interfaces."
+        "title": "B.E. in Computer Engineering",
+        "organization": "L.D. College of Engineering, Ahmedabad",
+        "date": "July 2023 - Present",
+        "description": "Currently pursuing Bachelor's degree in Computer Engineering with a CPI of 8.3."
     },
     {
-        title: "Pursuing bachelor's in Computer Science",
-        organization: "University",
-        date: "2021 - Present",
-        description: "Studying computer science fundamentals, programming languages, and software development. Focus on web technologies and system programming."
+        "title": "Frontend Intern",
+        "organization": "Prodigy InfoTech (Online)",
+        "date": "June 2025",
+        "description": "Completed 5 tasks including building 5 websites using HTML, CSS, and JavaScript. Received a Certificate of Recommendation."
     },
     {
-        title: "Started Programming Journey",
-        organization: "Self-Learning",
-        date: "2021",
-        description: "Began learning programming with C and C++. Developed problem-solving skills and built foundational knowledge in computer science."
-    },
+        "title": "Full Stack Intern",
+        "organization": "Prodigy CodeAlpha (Online)",
+        "date": "August 2025",
+        "description": "Completed 2 major projects: built a Social Media Clone using MERN stack and developed an E-commerce Clone using Django. Received a Certificate of Recommendation."
+    }
 ];
