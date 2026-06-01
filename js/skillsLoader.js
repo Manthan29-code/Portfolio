@@ -35,7 +35,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         // Calculate and set dynamic animation duration based on skill count
         // More skills = longer duration for readable speed
-        const baseSpeed = 4; // seconds per skill
+        const baseSpeed = 3; // seconds per skill
         const duration = skillsData.length * baseSpeed;
         skillsMarquee.style.animationDuration = `${duration}s`;
     }
