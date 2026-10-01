@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Manthan Movaliya - Portfolio</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Manthan Movaliya - Full Stack Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -35,27 +35,90 @@
             <div class="hero-content">
                 <div class="hero-text">
                     <h1>Hi, I'm <span class="highlight">Manthan Movaliya</span></h1>
-                    <h2>Full Stack Developer | genAI Enthusiast</h2>
-                    <p>Passionate about creating impactful and functional website. Currently working on  genAI skill .</p>
-                    <a href="projects.html" class="btn-primary">View Projects</a>
+                    <h2>Full Stack Developer | Building AI-Powered Applications</h2>
+                    <p>Passionate about creating scalable web applications and intelligent AI pipelines using modern full-stack technologies and Generative AI.</p>
+                    <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+                        <a href="projects.html" class="btn-primary">View Projects</a>
+                        <a href="assets/MANTHAN_resume.pdf" class="btn-secondary" target="_blank" rel="noopener noreferrer" style="color: var(--white); border-color: var(--white);">
+                            <i class="fas fa-file-pdf"></i> Resume
+                        </a>
+                    </div>
                 </div>
                 <div class="hero-image">
-                    <img src="/assets/download.png" alt="Manthan Movaliya" class="profile-img">
+                    <img src="assets/download.png" alt="Manthan Movaliya" class="profile-img">
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Skills Section -->
-    <section class="skills">
+    <!-- About Me Section (Home) -->
+    <section class="about-summary" id="about-summary">
         <div class="container">
-            <h2>Skills & Technologies</h2>
-            <!-- Dynamic skills marquee - cards loaded from skillData.js -->
-            <div class="skills-track">
-                <div class="skills-marquee" id="skills-marquee">
-                    <!-- Skills will be loaded dynamically by skillsLoader.js -->
+            <div class="about-summary-content">
+                <div class="about-summary-image">
+                    <img src="assets/Person.webp" alt="Manthan Movaliya" class="about-summary-img">
+                    <div class="experience-badge">
+                        <i class="fas fa-brain"></i>
+                        <span>AI & Full Stack</span>
+                    </div>
+                </div>
+                <div class="about-summary-text">
+                    <div class="section-tag">
+                        <i class="fas fa-user-tie"></i> About Me
+                    </div>
+                    <h2>Building Scalable & <span class="highlight">AI-Powered</span> Solutions</h2>
+                    <p class="about-bio">
+                        Full-Stack Developer experienced in building AI-powered web applications using modern technologies across frontend and backend development. Skilled in developing scalable, user-focused solutions with strong foundations in problem-solving, databases, and API design. Passionate about exploring emerging domains and continuously learning to build impactful solutions.
+                    </p>
+                    
+                    <div class="about-highlights-grid">
+                        <div class="highlight-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div>
+                                <h4>Education</h4>
+                                <p>B.E. in Computer Engineering, L.D. College of Engineering (CPI: 8.4)</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-briefcase"></i>
+                            <div>
+                                <h4>Experience</h4>
+                                <p>Frontend Intern @ Prodigy InfoTech & Full Stack Intern @ CodeAlpha</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-award"></i>
+                            <div>
+                                <h4>Achievements</h4>
+                                <p>Top 4% in GSSoC 2026, Postman API Student Expert, GDG Cloud Study Jam</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-robot"></i>
+                            <div>
+                                <h4>AI & Tech Focus</h4>
+                                <p>LangChain, LangGraph, FastAPI, Node.js/Express, React, and Docker</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-actions">
+                        <a href="assets/MANTHAN_resume.pdf" class="btn-primary" target="_blank" rel="noopener noreferrer">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                        <a href="about.html" class="btn-secondary">
+                            <i class="fas fa-arrow-right"></i> More About Me
+                        </a>
+                    </div>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- Skills Section (Slideable, categorized from Resume, no horizontal scrollbar) -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <!-- Dynamic skills slider and category tabs will be loaded dynamically by skillsLoader.js -->
         </div>
     </section>
 
@@ -64,15 +127,15 @@
         <div class="footer-content">
             <p>&copy; Built by Manthan Movaliya</p>
             <div class="social-links">
-                <a href="http://www.linkedin.com/in/manthan-movaliya-0601a3287" class="social-link"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Manthan29-code" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/manthan-movaliya-0601a3287" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Manthan29-code" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:manthanmovaliya9@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </footer>
 
+    <script src="js/skillData.js"></script>
+    <script src="js/skillsLoader.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
-<script src="js/skillData.js"></script>
-<script src="js/skillsLoader.js"></script>
-<script src="js/script.js" defer></script>
 </html>
