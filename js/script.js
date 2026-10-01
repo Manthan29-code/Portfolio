@@ -208,20 +208,8 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 
-// Project card hover effects
-document.addEventListener('DOMContentLoaded', () => {
-    const projectCards = document.querySelectorAll('.project-card');
-    
-    projectCards.forEach(card => {
-        card.addEventListener('mouseenter', () => {
-            card.style.transform = 'translateY(-10px) scale(1.02)';
-        });
-        
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = 'translateY(0) scale(1)';
-        });
-    });
-});
+// Dark mode preference loaded
+
 
 // Add loading animation
 window.addEventListener('load', () => {

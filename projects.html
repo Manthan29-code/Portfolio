@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Manthan Movaliya</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -29,34 +29,35 @@
         </div>
     </nav>
 
-    <!-- Projects Section -->
+    <!-- Projects Section Hero -->
     <section class="projects-hero">
         <div class="container">
-            <h1>My Projects</h1>
-            <p>Here are some of the projects I've worked on during my learning journey.</p>
+            <h1>Featured Projects & Repositories</h1>
+            <p>Explore my open-source codebases, AI workflows, full-stack web applications, and system design repositories directly synced with GitHub.</p>
         </div>
     </section>
 
+    <!-- Projects Grid Section -->
     <section class="projects">
         <div class="container">
-            <div class="projects-grid" id="projects-grid"></div>
+            <!-- Dynamic project toolbar, filters, and cards rendered by projectsLoader.js from repo.js -->
         </div>
     </section>
 
     <!-- Footer -->
     <footer class="footer">
         <div class="footer-content">
-            <p>&copy; by Manthan Movaliya</p>
+            <p>&copy; Built by Manthan Movaliya</p>
             <div class="social-links">
-                <a href="http://www.linkedin.com/in/manthan-movaliya-0601a3287" class="social-link"><i class="fab fa-linkedin"></i></a>
-                <a href="https://github.com/Manthan29-code" class="social-link"><i class="fab fa-github"></i></a>
-                <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                <a href="https://www.linkedin.com/in/manthan-movaliya-0601a3287" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://github.com/Manthan29-code" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="mailto:manthanmovaliya9@gmail.com" class="social-link" title="Email"><i class="fas fa-envelope"></i></a>
             </div>
         </div>
     </footer>
 
-    <script src="js/projectsData.js"></script>
-    <script src="js/projectsLoader.js"></script>
-    <script src="js/script.js"></script>
+    <!-- Scripts -->
+    <script type="module" src="js/projectsLoader.js"></script>
+    <script src="js/script.js" defer></script>
 </body>
 </html>
